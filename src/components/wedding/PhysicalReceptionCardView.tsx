@@ -4,7 +4,7 @@ import { MapPin, Calendar, ExternalLink, Image as ImageIcon, Sparkles } from "lu
 
 export function PhysicalReceptionCardView() {
   const [viewMode, setViewMode] = useState<"card" | "original">("card");
-  const receptionEvent = events.find((e) => e.id === "reception") || events[2];
+  const receptionEvent = (events.find((e) => e.id === "reception") || events[2])!;
 
   return (
     <section className="relative px-4 py-16 overflow-hidden">

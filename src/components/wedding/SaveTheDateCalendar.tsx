@@ -9,7 +9,7 @@ export function SaveTheDateCalendar() {
   // Nov 1, 2026 is Sunday, Nov 30 is Monday.
   const calendarDays = Array.from({ length: 30 }, (_, i) => i + 1);
 
-  const activeEvent = events.find((e) => e.dayNumber === selectedDay) || events[0];
+  const activeEvent = (events.find((e) => e.dayNumber === selectedDay) || events[0])!;
 
   return (
     <section className="relative px-4 py-16 overflow-hidden">

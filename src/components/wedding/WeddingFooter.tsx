@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { couple, downloadICS } from "@/lib/wedding";
-import { Heart, Share2, Copy, Check, Calendar, Download } from "lucide-react";
+import { Heart, Share2, Copy, Check, Download } from "lucide-react";
 
 export function WeddingFooter() {
   const [copied, setCopied] = useState(false);
@@ -27,29 +27,25 @@ export function WeddingFooter() {
   }
 
   return (
-    <footer className="relative bg-[#1c221b] text-[#fbf7ee] pt-20 pb-12 px-4 overflow-hidden border-t-2 border-[#d4af37]/40 text-center">
+    <footer className="relative bg-[#171e18] text-[#fbf7ee] pt-16 pb-12 px-4 overflow-hidden border-t-2 border-[#d4af37]/40 text-center">
       {/* Background radial gold glow */}
       <div className="pointer-events-none absolute inset-0 opacity-15">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-96 w-96 rounded-full bg-[#d4af37] blur-3xl" />
       </div>
 
       <div className="relative mx-auto max-w-lg">
-        {/* Monogram Seal */}
+        {/* Monogram - Clean, Transparent, Not kept within any square */}
         <div className="flex justify-center mb-6">
-          <div className="h-24 w-24 rounded-full p-1 bg-gradient-to-tr from-[#996515] via-[#f5e297] to-[#996515] shadow-xl">
-            <div className="h-full w-full rounded-full bg-[#172018] flex items-center justify-center overflow-hidden border border-[#d4af37]/50">
-              <img
-                src={couple.monogramUrl}
-                alt="Amrutha & Ansh Monogram"
-                className="h-20 w-20 object-contain"
-              />
-            </div>
-          </div>
+          <img
+            src={couple.monogramUrl}
+            alt="Amrutha & Ansh Monogram"
+            className="h-28 w-28 sm:h-32 sm:w-32 object-contain drop-shadow-[0_4px_16px_rgba(212,175,55,0.25)] transition-transform duration-500 hover:scale-105"
+          />
         </div>
 
         {/* Closing Headline */}
         <p className="font-vibes text-3xl text-[#d4af37]">We cannot wait to celebrate with you</p>
-        <h2 className="mt-2 font-cinzel text-3xl sm:text-4xl font-bold tracking-wide">
+        <h2 className="mt-2 font-cinzel text-3xl sm:text-4xl font-normal tracking-[0.15em] uppercase">
           Amrutha &amp; Ansh
         </h2>
 
@@ -76,7 +72,7 @@ export function WeddingFooter() {
           <button
             type="button"
             onClick={shareWhatsApp}
-            className="px-5 py-2.5 rounded-full bg-[#25D366] text-[#0f2414] font-medium text-xs uppercase tracking-wider flex items-center gap-2 hover:bg-[#20ba59] transition-colors shadow-sm"
+            className="px-5 py-2.5 rounded-full bg-[#25D366] text-[#0f2414] font-medium text-xs uppercase tracking-wider flex items-center gap-2 hover:bg-[#20ba59] transition-colors shadow-sm cursor-pointer"
           >
             <Share2 className="h-3.5 w-3.5" />
             <span>Share on WhatsApp</span>
@@ -85,7 +81,7 @@ export function WeddingFooter() {
           <button
             type="button"
             onClick={copyInvitation}
-            className="px-5 py-2.5 rounded-full border border-[#d4af37]/60 bg-white/10 text-[#fbf7ee] text-xs uppercase tracking-wider flex items-center gap-2 hover:bg-white/20 transition-colors"
+            className="px-5 py-2.5 rounded-full border border-[#d4af37]/60 bg-white/10 text-[#fbf7ee] text-xs uppercase tracking-wider flex items-center gap-2 hover:bg-white/20 transition-colors cursor-pointer"
           >
             {copied ? (
               <>
@@ -103,20 +99,23 @@ export function WeddingFooter() {
           <button
             type="button"
             onClick={() => downloadICS()}
-            className="px-5 py-2.5 rounded-full bg-gradient-to-r from-[#b8860b] to-[#996515] text-white text-xs uppercase tracking-wider flex items-center gap-2 hover:opacity-90 transition-opacity"
+            className="px-5 py-2.5 rounded-full bg-gradient-to-r from-[#b8860b] to-[#996515] text-white text-xs uppercase tracking-wider flex items-center gap-2 hover:opacity-90 transition-opacity cursor-pointer"
           >
             <Download className="h-3.5 w-3.5" />
             <span>Save to Calendar</span>
           </button>
         </div>
 
-        {/* Loving Family Note */}
-        <div className="mt-10 pt-6 border-t border-white/10 text-xs text-[#b8c2b7] space-y-1">
-          <p className="font-display italic text-sm text-[#fbf7ee]">
+        {/* Loving Family Note with Warm Regards names */}
+        <div className="mt-10 pt-6 border-t border-white/10 text-xs text-[#b8c2b7] space-y-1.5">
+          <p className="font-display italic text-sm sm:text-base text-[#fbf7ee]">
             &ldquo;With loving blessings and warm regards&rdquo;
           </p>
           <p className="font-medium text-[#d4af37]">{couple.brideParents}</p>
           <p className="font-medium text-[#d4af37]">{couple.groomParents}</p>
+          <p className="font-medium text-[#f5e297] pt-1">
+            Namratha V &amp; Dr. Ashka Shah
+          </p>
         </div>
 
         {/* Credits */}

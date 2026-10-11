@@ -6,7 +6,7 @@ export function VenueSection() {
   const [activeVenueId, setActiveVenueId] = useState<string>("wedding");
   const [copiedId, setCopiedId] = useState<string | null>(null);
 
-  const currentEvent = events.find((e) => e.id === activeVenueId) || events[0];
+  const currentEvent = (events.find((e) => e.id === activeVenueId) || events[0])!;
 
   function copyAddress(address: string, id: string) {
     navigator.clipboard.writeText(address);

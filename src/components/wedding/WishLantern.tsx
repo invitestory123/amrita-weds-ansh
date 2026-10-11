@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
-const lantern = "https://media.invitestory.in/seashell-vows/src/assets/watercolor-lantern.png";
-const lanterns = "https://media.invitestory.in/seashell-vows/src/assets/lantern-constellation.png";
+
+const lanternWithMonogram = "/images/watercolor-lantern.png";
+const lanternsConstellation = "https://media.invitestory.in/seashell-vows/src/assets/lantern-constellation.png";
 
 type ReleasedLantern = {
   id: number;
@@ -21,8 +22,8 @@ export function WishLantern() {
   const id = useRef(0);
 
   function releaseLanterns() {
-    const batch: ReleasedLantern[] = Array.from({ length: 22 }, (_, index) => {
-      const depth = index < 8 ? "far" : index < 17 ? "middle" : "near";
+    const batch: ReleasedLantern[] = Array.from({ length: 24 }, (_, index) => {
+      const depth = index < 8 ? "far" : index < 18 ? "middle" : "near";
       const depthScale = depth === "far" ? 0.3 : depth === "middle" ? 0.58 : 0.92;
       return {
         id: id.current++,
@@ -38,7 +39,7 @@ export function WishLantern() {
       };
     });
     setReleased((current) => [...current.slice(-44), ...batch]);
-    setMessage("The sky is glowing with blessings for Amrutha and Ansh.");
+    setMessage("The sky is glowing with warm wishes for Amrutha & Ansh ✨");
     window.setTimeout(() => {
       const batchIds = new Set(batch.map((entry) => entry.id));
       setReleased((current) => current.filter((entry) => !batchIds.has(entry.id)));
@@ -47,20 +48,22 @@ export function WishLantern() {
 
   return (
     <section className="wish-sky relative isolate overflow-hidden px-6 py-20 text-center">
+      {/* Background Lanterns constellation */}
       <img
-        src={lanterns}
+        src={lanternsConstellation}
         alt=""
         aria-hidden="true"
         loading="lazy"
         width={1024}
         height={1536}
-        className="pointer-events-none absolute -right-28 -top-24 -z-10 h-[115%] w-auto opacity-45"
+        className="pointer-events-none absolute -right-24 -top-20 -z-10 h-[120%] w-auto opacity-50"
       />
 
+      {/* Floating lanterns */}
       {released.map((entry) => (
         <img
           key={entry.id}
-          src={lantern}
+          src={lanternWithMonogram}
           alt=""
           aria-hidden="true"
           width={1024}
@@ -72,7 +75,7 @@ export function WishLantern() {
             {
               left: `${entry.x}%`,
               opacity: entry.opacity,
-              filter: `blur(${entry.blur}px) drop-shadow(0 12px 18px oklch(0.62 0.09 72 / 0.22))`,
+              filter: `blur(${entry.blur}px) drop-shadow(0 12px 18px rgba(180,140,50,0.22))`,
               "--wish-tilt": `${entry.tilt}deg`,
               "--wish-drift": `${entry.drift}px`,
               "--wish-scale": entry.scale,
@@ -84,26 +87,34 @@ export function WishLantern() {
       ))}
 
       <div className="mx-auto max-w-sm">
+        {/* Monogrammed Watercolor Lantern */}
         <img
-          src={lantern}
-          alt="Watercolor paper lantern glowing warmly"
+          src={lanternWithMonogram}
+          alt="Glowing watercolor wedding lantern with monogram"
           loading="lazy"
           width={1024}
           height={1536}
-          className="lantern-breathe mx-auto w-28 object-contain"
+          className="lantern-breathe mx-auto w-32 sm:w-36 object-contain drop-shadow-[0_16px_30px_rgba(180,140,50,0.3)]"
         />
-        <h2 className="mt-2 font-display text-[2.35rem] leading-tight">Send them a wish</h2>
-        <p className="mx-auto mt-3 max-w-xs text-sm leading-relaxed text-muted-foreground">
+
+        <h2 className="mt-4 font-display text-4xl sm:text-5xl font-light text-[#2c241d] tracking-wide">
+          Send them a wish
+        </h2>
+
+        <p className="mx-auto mt-2.5 max-w-xs text-sm sm:text-base leading-relaxed text-[#685848]">
           Release a sky full of light for their new beginning.
         </p>
+
+        {/* Release Lanterns Button styled like the sample image */}
         <button
           type="button"
           onClick={releaseLanterns}
-          className="press mt-7 flex min-h-[50px] w-full items-center justify-center rounded-sm bg-primary px-5 text-[0.68rem] uppercase tracking-[0.22em] text-primary-foreground shadow-[0_14px_30px_-18px_rgba(112,82,42,0.75)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
+          className="press mt-7 flex min-h-[50px] w-full items-center justify-center rounded-sm bg-[#bda071] hover:bg-[#b09260] active:scale-[0.98] px-5 text-xs uppercase tracking-[0.22em] text-white font-medium shadow-[0_12px_28px_rgba(189,160,113,0.35)] transition-all cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#bda071]"
         >
           Release lanterns
         </button>
-        <p aria-live="polite" className="mt-3 min-h-5 text-xs text-muted-foreground">
+
+        <p aria-live="polite" className="mt-3.5 min-h-5 text-xs text-[#8c7862] tracking-wide">
           {message}
         </p>
       </div>

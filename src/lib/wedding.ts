@@ -14,16 +14,21 @@ export type WeddingEvent = {
   mapsUrl: string;
   note: string;
   cardHighlight?: string;
+  imageUrl?: string;
 };
 
 export const couple = {
-  bride: "Amrutha V",
-  groom: "Ansh Haresh Shah",
+  bride: "Amrutha",
+  groom: "Ansh",
   brideFirst: "Amrutha",
   groomFirst: "Ansh",
   brideParents: "Smt. A. Sandhya Prasad & Sri R. Venkatesh Prasad",
   groomParents: "Dr. Mona Shah & Dr. Haresh R. Shah",
-  tagline: "Two souls, two families, one eternal celebration",
+  familyWarmRegards: ["Namratha V", "Dr. Ashka Shah"],
+  tagline: "Two States, One Heartbeat",
+  storyTitle: "Two States, One Heartbeat",
+  storyText:
+    "We met far from home - two strangers from two different states finding each other in a new country. We found our wavelengths matching over endless conversations and shared experiences, and our two stories began threading into one. This November, our two families come together as one - and we would love for you to join in the celebrations.",
   primaryDateLabel: "Sunday, 22nd November 2026",
   receptionDateLabel: "Sunday, 29th November 2026",
   weddingISO: "2026-11-22T09:45:00+05:30",
@@ -32,7 +37,10 @@ export const couple = {
   monogramUrl: "/images/monogram.png",
   portraitUrl: "/images/couple-portrait.jpg",
   proposalUrl: "/images/proposal-stage.png",
-  cardRefUrl: "/images/reception-card.png",
+  heroCoupleUrl: "/images/hero-couple.jpg",
+  weddingImageUrl: "/images/event-wedding.jpg",
+  garbaImageUrl: "/images/event-garba.jpg",
+  receptionImageUrl: "/images/event-reception.jpg",
   ogImageUrl: "/og-image.png",
   bgmUrl: "/audio/bgm.mp3",
 };
@@ -54,6 +62,7 @@ export const events: WeddingEvent[] = [
     mapsUrl: "https://share.google/5GBSRIy1TLoT5YkWc",
     note: "Muhurtham 9:45 AM to 10:15 AM · Followed by Lunch",
     cardHighlight: "Sacred Vows & Muhurtham in Bengaluru",
+    imageUrl: "/images/event-wedding.jpg",
   },
   {
     id: "garba",
@@ -71,6 +80,7 @@ export const events: WeddingEvent[] = [
     mapsUrl: "https://share.google/ufG4NhNjQQTmFJN16",
     note: "Traditional Garba, Dandiya & Dinner Celebration",
     cardHighlight: "An evening of music, dance & Gujarati festivities",
+    imageUrl: "/images/event-garba.jpg",
   },
   {
     id: "reception",
@@ -88,6 +98,7 @@ export const events: WeddingEvent[] = [
     mapsUrl: "https://share.google/PWZKCoYUsRQW4Ut3B",
     note: "7:00 PM Onwards · Followed by Dinner · Blessings Only",
     cardHighlight: "Grand Reception at Shiv Farm, Vadodara",
+    imageUrl: "/images/event-reception.jpg",
   },
 ];
 
