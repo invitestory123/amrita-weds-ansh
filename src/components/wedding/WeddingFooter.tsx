@@ -17,7 +17,7 @@ export function WeddingFooter() {
 
   function shareWhatsApp() {
     const text = encodeURIComponent(
-      `Together with our families, Amrutha & Ansh invite you to their wedding celebrations!\n\n` +
+      `Amrutha and Ansh invite you to their wedding celebrations!\n\n` +
         `📅 Wedding: Sunday, 22 Nov 2026 (Bengaluru)\n` +
         `📅 Garba: Saturday, 28 Nov 2026 (Vadodara)\n` +
         `📅 Reception: Sunday, 29 Nov 2026 (Vadodara)\n\n` +

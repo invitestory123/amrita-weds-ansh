@@ -60,7 +60,7 @@ export const events: WeddingEvent[] = [
     address: "7th Phase, J.P Nagar, Bengaluru - 560078",
     city: "Bengaluru",
     mapsUrl: "https://share.google/5GBSRIy1TLoT5YkWc",
-    note: "Muhurtham 9:45 AM to 10:15 AM · Followed by Lunch",
+    note: "Auspicious Muhurtham · Followed by Lunch",
     cardHighlight: "Sacred Vows & Muhurtham in Bengaluru",
     imageUrl: "/images/event-wedding.jpg",
   },

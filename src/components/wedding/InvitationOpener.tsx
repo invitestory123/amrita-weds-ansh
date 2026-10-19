@@ -140,37 +140,60 @@ export function InvitationOpener() {
           }`}
         />
 
-        {/* Pre-Open Direct Typography (Clean & Minimal - No pop up rectangle) */}
+        {/* Pre-Open Interactive Callout & Regal Card */}
         <div
-          className={`absolute bottom-8 inset-x-0 z-20 px-6 text-center transition-all duration-700 flex flex-col items-center ${
-            isPlaying ? "opacity-0 translate-y-4 pointer-events-none" : "opacity-100 translate-y-0"
+          className={`relative z-20 mx-4 w-full max-w-[340px] p-6 text-center rounded-2xl border border-[#d4af37]/45 bg-[#121913]/85 backdrop-blur-md shadow-[0_20px_50px_rgba(0,0,0,0.85)] transition-all duration-700 ${
+            isPlaying ? "opacity-0 scale-90 pointer-events-none" : "opacity-100 scale-100 animate-in fade-in"
           }`}
         >
-          {/* Couple Names & Date */}
-          <h1 className="font-cinzel text-3xl sm:text-4xl font-normal text-[#fcf9f0] tracking-wider drop-shadow-[0_2px_14px_rgba(0,0,0,0.85)]">
-            Amrutha &amp; Ansh
-          </h1>
-          <p className="mt-1 font-body text-xs sm:text-sm uppercase tracking-[0.32em] text-[#e8c872] drop-shadow-[0_2px_8px_rgba(0,0,0,0.85)]">
-            Nov 2026
+          {/* Sacred Devanagari Invocation */}
+          <p className="font-devanagari text-xs sm:text-sm text-[#f5e297] tracking-widest drop-shadow-sm">
+            ॥ श्री गणेशाय नमः ॥
           </p>
 
-          {/* Minimal Tap prompt */}
-          <div className="mt-5">
-            <button
-              type="button"
-              onClick={(e) => {
-                e.stopPropagation();
-                handleStart();
-              }}
-              className="inline-flex items-center gap-2 py-2.5 px-6 rounded-full bg-black/40 hover:bg-black/65 border border-[#d4af37]/60 text-[#f5e297] font-body text-xs tracking-[0.2em] uppercase backdrop-blur-md transition-all duration-300 hover:scale-105 active:scale-95 shadow-[0_4px_20px_rgba(0,0,0,0.5)] cursor-pointer"
-            >
-              <Play className="h-3 w-3 fill-current" />
-              <span>Tap to Open Invitation</span>
-            </button>
+          {/* Monogram Seal with breathing warm pulse */}
+          <div className="relative mx-auto mt-4 flex justify-center">
+            <div className="absolute inset-0 rounded-full bg-[#d4af37]/25 blur-lg animate-pulse" />
+            <div className="relative h-24 w-24 rounded-full p-1 bg-gradient-to-tr from-[#996515] via-[#f5e297] to-[#996515] shadow-xl">
+              <div className="h-full w-full rounded-full bg-[#182119] flex items-center justify-center overflow-hidden border border-[#d4af37]/50">
+                <img
+                  src={couple.monogramUrl}
+                  alt="Amrutha & Ansh Monogram"
+                  className="h-20 w-20 object-contain drop-shadow"
+                />
+              </div>
+            </div>
           </div>
 
-          <p className="mt-3 text-[0.62rem] text-[#f5e297]/80 tracking-widest uppercase flex items-center justify-center gap-1.5 drop-shadow">
-            <Music className="h-3 w-3" />
+          {/* Couple Names & Invitation Heading */}
+          <div className="mt-4">
+            <p className="text-[0.62rem] uppercase tracking-[0.32em] text-[#e8c872]/85 font-medium">
+              Wedding Celebrations
+            </p>
+            <h1 className="mt-1 font-cinzel text-2xl font-semibold text-[#fbf7ee] tracking-wide">
+              {couple.brideFirst} &amp; {couple.groomFirst}
+            </h1>
+            <p className="mt-1 text-[0.68rem] text-[#dcd7cb] font-body tracking-wider">
+              Bengaluru &amp; Vadodara · Nov 2026
+            </p>
+          </div>
+
+          {/* Tap to Open CTA Button */}
+          <button
+            type="button"
+            onClick={(e) => {
+              e.stopPropagation();
+              handleStart();
+            }}
+            className="mt-5 w-full inline-flex items-center justify-center gap-2 py-3 px-5 rounded-full bg-gradient-to-r from-[#996515] via-[#f5e297] to-[#996515] text-[#1a1c17] font-body font-semibold text-xs tracking-[0.2em] uppercase shadow-[0_8px_24px_rgba(212,175,55,0.4)] transition-all duration-300 hover:scale-[1.03] active:scale-[0.98] cursor-pointer"
+          >
+            <Play className="h-3.5 w-3.5 fill-[#1a1c17] text-[#1a1c17]" />
+            <span>Tap to Open Invitation</span>
+          </button>
+
+          {/* Sound Guidance Callout */}
+          <p className="mt-3 text-[0.62rem] text-[#f5e297]/80 tracking-wider flex items-center justify-center gap-1.5">
+            <Music className="h-3 w-3 text-[#f5e297]" />
             <span>Best experienced with sound</span>
           </p>
         </div>

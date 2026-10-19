@@ -63,19 +63,6 @@ export function Hero() {
           </h1>
         </div>
 
-        {/* Visual Continuity: Couple Facing Front Under Arch where Video Ends */}
-        <div className="relative z-10 my-3 w-full max-w-sm sm:max-w-md px-2">
-          <div className="relative rounded-2xl overflow-hidden border border-[#d4af37]/40 shadow-[0_16px_40px_rgba(180,140,50,0.18)] bg-[#fdfbf7] group">
-            <img
-              src={couple.heroCoupleUrl}
-              alt="Amrutha & Ansh Wedding Celebration"
-              className="w-full h-auto object-cover max-h-[380px] sm:max-h-[440px] transition-transform duration-700 group-hover:scale-102"
-              loading="eager"
-            />
-            {/* Soft inner vignette */}
-            <div className="absolute inset-0 pointer-events-none bg-gradient-to-t from-black/20 via-transparent to-transparent" />
-          </div>
-        </div>
 
         {/* Bottom Dates & Replay Button */}
         <div className="relative z-10 mt-2 w-full max-w-md">
