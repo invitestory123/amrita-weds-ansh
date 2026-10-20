@@ -87,7 +87,7 @@ export function CelebrationsTimeline() {
                     </div>
 
                     {ev.note && (
-                      <div className="mt-3 p-3 rounded-xl bg-[#faf5e8]/90 border border-[#d4af37]/30 text-xs text-[#705c43] leading-relaxed">
+                      <div className="mt-3 p-3 rounded-xl bg-[#faf5e8]/90 border border-[#d4af37]/30 text-xs text-[#705c43] leading-relaxed whitespace-pre-line">
                         {ev.note}
                       </div>
                     )}

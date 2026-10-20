@@ -165,16 +165,10 @@ export function InvitationOpener() {
             </div>
           </div>
 
-          {/* Couple Names & Invitation Heading */}
-          <div className="mt-4">
-            <p className="text-[0.62rem] uppercase tracking-[0.32em] text-[#e8c872]/85 font-medium">
+          {/* Invitation Heading */}
+          <div className="mt-3">
+            <p className="text-[0.68rem] uppercase tracking-[0.32em] text-[#e8c872] font-medium">
               Wedding Celebrations
-            </p>
-            <h1 className="mt-1 font-cinzel text-2xl font-semibold text-[#fbf7ee] tracking-wide">
-              {couple.brideFirst} &amp; {couple.groomFirst}
-            </h1>
-            <p className="mt-1 text-[0.68rem] text-[#dcd7cb] font-body tracking-wider">
-              Bengaluru &amp; Vadodara · Nov 2026
             </p>
           </div>
 
