@@ -78,7 +78,7 @@ export function VenueSection() {
               className="flex-1 min-h-[44px] px-5 py-2.5 rounded-xl bg-gradient-to-r from-[#2c332b] to-[#1c221b] text-white text-xs uppercase font-medium tracking-wider flex items-center justify-center gap-2 shadow-xs hover:bg-black transition-colors"
             >
               <Navigation className="h-4 w-4 text-[#d4af37]" />
-              <span>Open in Google Maps</span>
+              <span>Open Maps</span>
               <ExternalLink className="h-3.5 w-3.5 opacity-60" />
             </a>
 

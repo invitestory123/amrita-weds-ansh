@@ -111,7 +111,10 @@ export function WeddingFooter() {
           <p className="font-display italic text-sm sm:text-base text-[#fbf7ee]">
             &ldquo;With loving blessings and warm regards&rdquo;
           </p>
-          <p className="font-medium text-[#d4af37]">{couple.brideParents}</p>
+          <p className="font-medium text-[#d4af37]">
+            <span className="block sm:inline">Smt. A. Sandhya Prasad &amp;</span>{" "}
+            <span className="inline-block whitespace-nowrap">Sri R. Venkatesh Prasad</span>
+          </p>
           <p className="font-medium text-[#d4af37]">{couple.groomParents}</p>
           <p className="font-medium text-[#f5e297] pt-1">
             Namratha V &amp; Dr. Ashka Shah

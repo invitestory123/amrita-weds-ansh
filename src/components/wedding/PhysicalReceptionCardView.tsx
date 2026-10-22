@@ -185,10 +185,10 @@ export function PhysicalReceptionCardView() {
                     href={receptionEvent.mapsUrl}
                     target="_blank"
                     rel="noreferrer"
-                    className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-[#3e503e] text-white text-[0.68rem] font-medium tracking-wider uppercase shadow-xs hover:bg-[#2f3e2f] transition-all"
+                    className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-[#3e503e] text-white text-[0.68rem] font-medium tracking-wider uppercase shadow-xs hover:bg-[#2f3e2f] transition-all whitespace-nowrap"
                   >
                     <MapPin className="h-3.5 w-3.5" />
-                    <span>Open in Google Maps</span>
+                    <span>Open Maps</span>
                   </a>
                   <button
                     type="button"

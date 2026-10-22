@@ -94,23 +94,23 @@ export function CelebrationsTimeline() {
                   </div>
                 </div>
 
-                {/* Action Buttons: Google Maps & Add to Calendar */}
+                {/* Action Buttons: Open Maps & Add to Calendar */}
                 <div className="mt-6 pt-4 border-t border-[#d4af37]/25 flex flex-wrap gap-2.5 sm:gap-3">
                   <a
                     href={ev.mapsUrl}
                     target="_blank"
                     rel="noreferrer"
-                    className="flex-1 min-h-[42px] px-4 py-2 rounded-xl bg-[#2c332b] text-white text-xs uppercase font-medium tracking-wider flex items-center justify-center gap-2 shadow-xs hover:bg-[#1a211a] transition-colors"
+                    className="flex-1 min-h-[42px] px-3.5 py-2 rounded-xl bg-[#2c332b] text-white text-xs uppercase font-medium tracking-wider flex items-center justify-center gap-1.5 shadow-xs hover:bg-[#1a211a] transition-colors whitespace-nowrap"
                   >
-                    <Navigation className="h-3.5 w-3.5 text-[#d4af37]" />
-                    <span>Open in Google Maps</span>
+                    <Navigation className="h-3.5 w-3.5 text-[#d4af37] shrink-0" />
+                    <span>Open Maps</span>
                   </a>
                   <button
                     type="button"
                     onClick={() => downloadICS(ev.id)}
-                    className="px-4 py-2 rounded-xl border border-[#b8860b] bg-white text-[#6b4f17] text-xs uppercase font-medium tracking-wider flex items-center justify-center gap-1.5 hover:bg-[#faf6ee] transition-colors cursor-pointer"
+                    className="px-3.5 py-2 rounded-xl border border-[#b8860b] bg-white text-[#6b4f17] text-xs uppercase font-medium tracking-wider flex items-center justify-center gap-1.5 hover:bg-[#faf6ee] transition-colors cursor-pointer whitespace-nowrap"
                   >
-                    <Calendar className="h-3.5 w-3.5" />
+                    <Calendar className="h-3.5 w-3.5 shrink-0" />
                     <span>Add to Calendar</span>
                   </button>
                 </div>

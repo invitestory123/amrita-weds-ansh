@@ -1,5 +1,6 @@
 import { couple } from "@/lib/wedding";
 import { PetalTap } from "./PetalTap";
+import { MapPin } from "lucide-react";
 
 export function Hero() {
   return (
@@ -32,14 +33,17 @@ export function Hero() {
 
           {/* Parents' names */}
           <div className="mt-3.5 space-y-1 font-display text-base sm:text-lg text-[#2c241d] leading-relaxed">
-            <p className="font-semibold">{couple.brideParents}</p>
+            <p className="font-semibold leading-snug">
+              <span className="block sm:inline">Smt. A. Sandhya Prasad &amp;</span>{" "}
+              <span className="inline-block whitespace-nowrap">Sri R. Venkatesh Prasad</span>
+            </p>
             <p className="text-sm font-display italic text-[#8c6f37] my-0.5">&amp;</p>
             <p className="font-semibold">{couple.groomParents}</p>
           </div>
 
           {/* Invitation Callout */}
           <div className="mt-6 sm:mt-7 w-full">
-            <p className="text-[0.62rem] sm:text-[0.68rem] uppercase tracking-[0.32em] text-[#8c6f37] font-medium">
+            <p className="text-[0.68rem] uppercase tracking-[0.32em] text-[#8c6f37] font-medium">
               INVITE YOU TO CELEBRATE THE WEDDING OF
             </p>
 
@@ -58,17 +62,17 @@ export function Hero() {
           </div>
 
           {/* Date & Location Pill Badges */}
-          <div className="mt-6 sm:mt-7 w-full max-w-xs sm:max-w-sm mx-auto space-y-2.5">
-            <div className="flex items-center justify-center gap-2 py-2 px-4 rounded-full bg-[#faf5e8]/95 border border-[#d4af37]/45 shadow-xs text-xs sm:text-sm font-display text-[#3d332a]">
-              <span className="text-sm">📍</span>
+          <div className="mt-6 sm:mt-7 flex flex-col items-center gap-2.5 w-full">
+            <div className="inline-flex items-center justify-center gap-2 py-2 px-5 sm:px-6 rounded-full bg-[#faf5e8]/95 border border-[#d4af37]/60 shadow-[0_2px_8px_rgba(212,175,55,0.08)] text-xs sm:text-sm font-display text-[#3d332a]">
+              <MapPin className="h-3.5 w-3.5 text-[#8c6f37] shrink-0" />
               <span>
-                <strong>Bengaluru:</strong> 22nd Nov 2026
+                <strong className="font-semibold text-[#2c241d]">Bengaluru:</strong> 22nd Nov 2026
               </span>
             </div>
-            <div className="flex items-center justify-center gap-2 py-2 px-4 rounded-full bg-[#faf5e8]/95 border border-[#d4af37]/45 shadow-xs text-xs sm:text-sm font-display text-[#3d332a]">
-              <span className="text-sm">📍</span>
+            <div className="inline-flex items-center justify-center gap-2 py-2 px-5 sm:px-6 rounded-full bg-[#faf5e8]/95 border border-[#d4af37]/60 shadow-[0_2px_8px_rgba(212,175,55,0.08)] text-xs sm:text-sm font-display text-[#3d332a]">
+              <MapPin className="h-3.5 w-3.5 text-[#8c6f37] shrink-0" />
               <span>
-                <strong>Vadodara:</strong> 28th &amp; 29th Nov 2026
+                <strong className="font-semibold text-[#2c241d]">Vadodara:</strong> 28th &amp; 29th Nov 2026
               </span>
             </div>
           </div>
