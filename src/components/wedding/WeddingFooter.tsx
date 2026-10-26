@@ -18,9 +18,7 @@ export function WeddingFooter() {
   function shareWhatsApp() {
     const text = encodeURIComponent(
       `Amrutha and Ansh invite you to their wedding celebrations!\n\n` +
-        `📅 Wedding: Sunday, 22 Nov 2026 (Bengaluru)\n` +
-        `📅 Garba: Saturday, 28 Nov 2026 (Vadodara)\n` +
-        `📅 Reception: Sunday, 29 Nov 2026 (Vadodara)\n\n` +
+        `📅 Wedding Ceremony & Muhurtham: Sunday, 22 Nov 2026 (Bengaluru)\n\n` +
         `View the complete invitation & details here:\n${window.location.href}`,
     );
     window.open(`https://api.whatsapp.com/send?text=${text}`, "_blank");
@@ -50,21 +48,12 @@ export function WeddingFooter() {
         </h2>
 
         {/* Milestone Recap */}
-        <div className="mt-8 grid grid-cols-2 border-y border-[#d4af37]/30 py-4 text-left max-w-md mx-auto">
-          <div className="border-r border-[#d4af37]/30 pr-4">
-            <p className="text-[0.68rem] uppercase tracking-wider text-[#d4af37] font-semibold">
-              The Wedding
-            </p>
-            <p className="mt-1 font-display text-base sm:text-lg">22 November 2026</p>
-            <p className="text-xs text-[#a0ad9f]">MLR Convention, Bengaluru</p>
-          </div>
-          <div className="pl-4">
-            <p className="text-[0.68rem] uppercase tracking-wider text-[#d4af37] font-semibold">
-              The Reception
-            </p>
-            <p className="mt-1 font-display text-base sm:text-lg">29 November 2026</p>
-            <p className="text-xs text-[#a0ad9f]">Shiv Farm, Vadodara</p>
-          </div>
+        <div className="mt-8 border-y border-[#d4af37]/30 py-4 text-center max-w-xs mx-auto">
+          <p className="text-[0.68rem] uppercase tracking-wider text-[#d4af37] font-semibold">
+            Wedding Ceremony &amp; Muhurtham
+          </p>
+          <p className="mt-1 font-display text-base sm:text-lg">Sunday, 22 November 2026</p>
+          <p className="text-xs text-[#a0ad9f]">Brigade MLR Convention Centre, Bengaluru</p>
         </div>
 
         {/* Share & Calendar Buttons */}

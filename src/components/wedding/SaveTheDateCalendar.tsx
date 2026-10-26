@@ -73,9 +73,7 @@ export function SaveTheDateCalendar() {
               <div className="grid grid-cols-7 text-center gap-y-2.5 sm:gap-y-3 pt-3 text-sm sm:text-base font-display text-[#473b2c]">
                 {calendarDays.map((day) => {
                   const isWedding = day === 22;
-                  const isGarba = day === 28;
-                  const isReception = day === 29;
-                  const isHighlighted = isWedding || isGarba || isReception;
+                  const isHighlighted = isWedding;
                   const isSelected = selectedDay === day;
 
                   return (
@@ -93,34 +91,20 @@ export function SaveTheDateCalendar() {
                             : ""
                         }`}
                       >
-                        {/* Glowing Heart Frame for Wedding Date 22 (Exact model from image 5) */}
+                        {/* Glowing Heart Frame for Wedding Date 22 */}
                         {isWedding && (
                           <span className="pointer-events-none absolute -inset-2.5 flex items-center justify-center heart-glow-active z-0">
                             <Heart className="h-9 w-9 sm:h-10 sm:w-10 fill-[#fef08a] stroke-[#ca8a04] stroke-[1.8] opacity-90 drop-shadow-[0_0_12px_rgba(234,179,8,0.85)]" />
                           </span>
                         )}
 
-                        {/* Special gold aura for Garba (28) & Reception (29) */}
-                        {(isGarba || isReception) && (
-                          <span className="pointer-events-none absolute inset-0 rounded-full bg-gradient-to-tr from-[#dfb76c] to-[#b8860b] opacity-25 animate-pulse z-0" />
-                        )}
-
                         <span
                           className={`relative z-10 ${
-                            isWedding
-                              ? "font-bold text-[#854d0e] text-base drop-shadow-xs"
-                              : isGarba || isReception
-                                ? "font-bold text-[#9a3412]"
-                                : ""
+                            isWedding ? "font-bold text-[#854d0e] text-base drop-shadow-xs" : ""
                           }`}
                         >
                           {day}
                         </span>
-
-                        {/* Mini dot marker for highlighted celebration dates */}
-                        {isHighlighted && !isWedding && (
-                          <span className="absolute -bottom-1 h-1.5 w-1.5 rounded-full bg-[#b8860b]" />
-                        )}
                       </button>
                     </div>
                   );
@@ -131,7 +115,7 @@ export function SaveTheDateCalendar() {
             {/* Bottom Filigree flourish */}
             <div className="relative mt-5 pt-3 border-t border-[#d4af37]/30 flex items-center justify-center gap-3 text-[#b8860b]">
               <span className="h-px flex-1 bg-gradient-to-r from-transparent to-[#d4af37]/50" />
-              <span className="text-xs font-cinzel">✦ THREE DAYS OF CELEBRATION ✦</span>
+              <span className="text-xs font-cinzel">✦ THE SACRED WEDDING MUHURTHAM ✦</span>
               <span className="h-px flex-1 bg-gradient-to-l from-transparent to-[#d4af37]/50" />
             </div>
 

@@ -12,21 +12,21 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       {
-        title: "Amrutha & Ansh | Wedding Invitation · 22 & 29 Nov 2026",
+        title: "Amrutha & Ansh | Wedding Invitation · 22 Nov 2026",
       },
       {
         name: "description",
         content:
-          "Together with their families, Amrutha and Ansh invite you to their wedding celebrations in Bengaluru & Vadodara. Wedding: 22 Nov 2026 · Reception: 29 Nov 2026.",
+          "Together with their families, Amrutha and Ansh invite you to their wedding ceremony in Bengaluru on 22 Nov 2026.",
       },
       {
         property: "og:title",
-        content: "Amrutha & Ansh | Wedding Invitation · 22 & 29 Nov 2026",
+        content: "Amrutha & Ansh | Wedding Invitation · 22 Nov 2026",
       },
       {
         property: "og:description",
         content:
-          "Wedding Ceremony in Bengaluru (22 Nov 2026) · Garba-Raas (28 Nov) & Reception (29 Nov 2026) in Vadodara.",
+          "Wedding Ceremony & Muhurtham in Bengaluru (22 Nov 2026).",
       },
       { property: "og:image", content: "/og-image.png" },
       { property: "og:image:secure_url", content: "/og-image.png" },
@@ -41,12 +41,12 @@ export const Route = createFileRoute("/")({
       { name: "twitter:card", content: "summary_large_image" },
       {
         name: "twitter:title",
-        content: "Amrutha & Ansh | Wedding Invitation · 22 & 29 Nov 2026",
+        content: "Amrutha & Ansh | Wedding Invitation · 22 Nov 2026",
       },
       {
         name: "twitter:description",
         content:
-          "Wedding in Bengaluru (22 Nov) · Garba & Reception in Vadodara (28 & 29 Nov 2026).",
+          "Wedding Ceremony & Muhurtham in Bengaluru (22 Nov 2026).",
       },
       { name: "twitter:image", content: "/og-image.png" },
     ],

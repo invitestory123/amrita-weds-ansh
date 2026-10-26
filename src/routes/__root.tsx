@@ -73,20 +73,20 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Amrutha & Ansh | Wedding Invitation · 22 & 29 Nov 2026" },
+      { title: "Amrutha & Ansh | Wedding Invitation · 22 Nov 2026" },
       {
         name: "description",
         content:
-          "Together with their families, Amrutha V and Ansh Haresh Shah invite you to their wedding celebrations in Bengaluru & Vadodara. Wedding: 22 Nov 2026 · Reception: 29 Nov 2026.",
+          "Together with their families, Amrutha V and Ansh Haresh Shah invite you to their wedding ceremony in Bengaluru on 22 Nov 2026.",
       },
       {
         property: "og:title",
-        content: "Amrutha & Ansh | Wedding Invitation · 22 & 29 Nov 2026",
+        content: "Amrutha & Ansh | Wedding Invitation · 22 Nov 2026",
       },
       {
         property: "og:description",
         content:
-          "Together with their families, Amrutha V and Ansh Haresh Shah cordially invite you to celebrate their Wedding in Bengaluru (22 Nov) and Reception in Vadodara (29 Nov).",
+          "Together with their families, Amrutha V and Ansh Haresh Shah cordially invite you to celebrate their Wedding Ceremony in Bengaluru (22 Nov 2026).",
       },
       { property: "og:image", content: "/og-image.png" },
       { property: "og:image:secure_url", content: "/og-image.png" },
@@ -95,18 +95,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:image:height", content: "630" },
       {
         property: "og:image:alt",
-        content: "Amrutha & Ansh Wedding Invitation · Bengaluru & Vadodara",
+        content: "Amrutha & Ansh Wedding Invitation · Bengaluru",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       {
         name: "twitter:title",
-        content: "Amrutha & Ansh | Wedding Invitation · 22 & 29 Nov 2026",
+        content: "Amrutha & Ansh | Wedding Invitation · 22 Nov 2026",
       },
       {
         name: "twitter:description",
         content:
-          "Wedding Ceremony in Bengaluru (22 Nov) · Garba & Reception in Vadodara (28 & 29 Nov).",
+          "Wedding Ceremony in Bengaluru · 22 Nov 2026.",
       },
       { name: "twitter:image", content: "/og-image.png" },
     ],

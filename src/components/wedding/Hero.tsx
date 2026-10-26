@@ -61,18 +61,12 @@ export function Hero() {
             </h1>
           </div>
 
-          {/* Date & Location Pill Badges */}
+          {/* Date & Location Pill Badge */}
           <div className="mt-6 sm:mt-7 flex flex-col items-center gap-2.5 w-full">
             <div className="inline-flex items-center justify-center gap-2 py-2 px-5 sm:px-6 rounded-full bg-[#faf5e8]/95 border border-[#d4af37]/60 shadow-[0_2px_8px_rgba(212,175,55,0.08)] text-xs sm:text-sm font-display text-[#3d332a]">
               <MapPin className="h-3.5 w-3.5 text-[#8c6f37] shrink-0" />
               <span>
-                <strong className="font-semibold text-[#2c241d]">Bengaluru:</strong> 22nd Nov 2026
-              </span>
-            </div>
-            <div className="inline-flex items-center justify-center gap-2 py-2 px-5 sm:px-6 rounded-full bg-[#faf5e8]/95 border border-[#d4af37]/60 shadow-[0_2px_8px_rgba(212,175,55,0.08)] text-xs sm:text-sm font-display text-[#3d332a]">
-              <MapPin className="h-3.5 w-3.5 text-[#8c6f37] shrink-0" />
-              <span>
-                <strong className="font-semibold text-[#2c241d]">Vadodara:</strong> 28th &amp; 29th Nov 2026
+                <strong className="font-semibold text-[#2c241d]">Bengaluru:</strong> Sunday, 22nd Nov 2026
               </span>
             </div>
           </div>

@@ -59,39 +59,9 @@ export function Countdown({ iso = couple.weddingISO }: { iso?: string }) {
 
   return (
     <div className="w-full max-w-md mx-auto text-center">
-      {/* Event Selector for Countdown */}
-      <div className="mb-4 inline-flex items-center gap-1 p-1 rounded-full bg-[#f3ebd7] border border-[#d4af37]/30 text-xs">
-        <button
-          type="button"
-          onClick={() => {
-            setTargetISO(couple.weddingISO);
-            setActiveLabel("Wedding Ceremony (Bengaluru)");
-          }}
-          className={`px-3 py-1 rounded-full transition-all ${
-            targetISO === couple.weddingISO
-              ? "bg-[#2c332b] text-white shadow-xs font-medium"
-              : "text-[#554533] hover:text-black"
-          }`}
-        >
-          Wedding (22 Nov)
-        </button>
-        <button
-          type="button"
-          onClick={() => {
-            setTargetISO(couple.receptionISO);
-            setActiveLabel("Reception (Vadodara)");
-          }}
-          className={`px-3 py-1 rounded-full transition-all ${
-            targetISO === couple.receptionISO
-              ? "bg-[#2c332b] text-white shadow-xs font-medium"
-              : "text-[#554533] hover:text-black"
-          }`}
-        >
-          Reception (29 Nov)
-        </button>
-      </div>
-
-      <p className="text-xs text-[#8c6f37] font-medium mb-3">Counting down to our {activeLabel}</p>
+      <p className="text-xs text-[#8c6f37] font-medium mb-3">
+        Counting down to the Wedding Muhurtham (Sunday, 22 Nov 2026)
+      </p>
 
       {/* Countdown Grid */}
       <div className="grid grid-cols-4 gap-2 sm:gap-3">
