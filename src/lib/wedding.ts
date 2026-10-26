@@ -24,7 +24,7 @@ export const couple = {
   groomFirst: "Ansh",
   brideParents: "Smt. A. Sandhya Prasad & Sri R. Venkatesh Prasad",
   groomParents: "Dr. Mona Shah & Dr. Haresh R. Shah",
-  familyWarmRegards: ["Namratha V", "Dr. Ashka Shah"],
+  familyWarmRegards: ["Namratha V", "Dr. Ashka Shah", "Amith", "Rohith"],
   tagline: "Two States, One Heartbeat",
   storyTitle: "Two States, One Heartbeat",
   storyText:

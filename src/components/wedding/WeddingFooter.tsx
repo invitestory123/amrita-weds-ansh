@@ -119,6 +119,9 @@ export function WeddingFooter() {
           <p className="font-medium text-[#f5e297] pt-1">
             Namratha V &amp; Dr. Ashka Shah
           </p>
+          <p className="font-medium text-[#f5e297]">
+            Amith &amp; Rohith
+          </p>
         </div>
 
         {/* Credits */}
