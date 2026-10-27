@@ -26,7 +26,7 @@ export const Route = createFileRoute("/")({
       {
         property: "og:description",
         content:
-          "Wedding & Muhurtham in Bengaluru (22 Nov 2026).",
+          "Muhurtham in Bengaluru (22 Nov 2026).",
       },
       { property: "og:image", content: "/og-image.png" },
       { property: "og:image:secure_url", content: "/og-image.png" },
@@ -46,7 +46,7 @@ export const Route = createFileRoute("/")({
       {
         name: "twitter:description",
         content:
-          "Wedding & Muhurtham in Bengaluru (22 Nov 2026).",
+          "Muhurtham in Bengaluru (22 Nov 2026).",
       },
       { name: "twitter:image", content: "/og-image.png" },
     ],

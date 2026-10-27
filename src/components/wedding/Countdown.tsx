@@ -54,13 +54,13 @@ function FlipCell({ value, label }: { value: number; label: string }) {
 
 export function Countdown({ iso = couple.weddingISO }: { iso?: string }) {
   const [targetISO, setTargetISO] = useState<string>(iso);
-  const [activeLabel, setActiveLabel] = useState<string>("Wedding (Bengaluru)");
+  const [activeLabel, setActiveLabel] = useState<string>("Muhurtham (Bengaluru)");
   const t = useCountdown(targetISO);
 
   return (
     <div className="w-full max-w-md mx-auto text-center">
       <p className="text-xs text-[#8c6f37] font-medium mb-3">
-        Counting down to the Wedding Muhurtham (Sunday, 22 Nov 2026)
+        Counting down to the Muhurtham (Sunday, 22 Nov 2026)
       </p>
 
       {/* Countdown Grid */}

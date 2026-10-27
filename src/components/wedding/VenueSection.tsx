@@ -26,7 +26,7 @@ export function VenueSection() {
             Venues &amp; Directions
           </h2>
           <p className="mt-2 text-xs sm:text-sm text-[#6b5842] max-w-sm mx-auto">
-            Wedding &amp; Muhurtham · Bengaluru
+            Muhurtham · Bengaluru
           </p>
 
           {/* Venue Tabs */}

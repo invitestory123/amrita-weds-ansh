@@ -48,7 +48,7 @@ export const couple = {
 export const events: WeddingEvent[] = [
   {
     id: "wedding",
-    name: "Wedding",
+    name: "Muhurtham",
     hindi: "शुभ विवाह",
     glyph: "☀",
     date: "Sunday, 22 November 2026",
@@ -61,7 +61,7 @@ export const events: WeddingEvent[] = [
     city: "Bengaluru",
     mapsUrl: "https://www.google.com/maps/search/?api=1&query=Brigade+MLR+Convention+Centre+JP+Nagar+Bengaluru",
     note: "Muhurtham : 9:45 to 10:15 AM\nLagna : Dhanur · Followed by Lunch",
-    cardHighlight: "Sacred Vows & Muhurtham in Bengaluru",
+    cardHighlight: "Sacred Muhurtham in Bengaluru",
     imageUrl: "/images/event-wedding.jpg",
   },
 ];
