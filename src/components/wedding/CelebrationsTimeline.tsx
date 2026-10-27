@@ -14,7 +14,7 @@ export function CelebrationsTimeline() {
             The Celebrations
           </h2>
           <p className="mt-2 text-xs sm:text-sm text-[#6b5842] max-w-md mx-auto">
-            Wedding &amp; Muhurtham · Bengaluru
+            Muhurtham · Bengaluru
           </p>
         </div>
 
