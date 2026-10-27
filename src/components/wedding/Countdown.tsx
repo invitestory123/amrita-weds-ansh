@@ -54,7 +54,7 @@ function FlipCell({ value, label }: { value: number; label: string }) {
 
 export function Countdown({ iso = couple.weddingISO }: { iso?: string }) {
   const [targetISO, setTargetISO] = useState<string>(iso);
-  const [activeLabel, setActiveLabel] = useState<string>("Wedding Ceremony (Bengaluru)");
+  const [activeLabel, setActiveLabel] = useState<string>("Wedding (Bengaluru)");
   const t = useCountdown(targetISO);
 
   return (

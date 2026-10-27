@@ -48,7 +48,7 @@ export const couple = {
 export const events: WeddingEvent[] = [
   {
     id: "wedding",
-    name: "Wedding Ceremony",
+    name: "Wedding",
     hindi: "शुभ विवाह",
     glyph: "☀",
     date: "Sunday, 22 November 2026",

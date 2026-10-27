@@ -14,7 +14,7 @@ export function CelebrationsTimeline() {
             The Celebrations
           </h2>
           <p className="mt-2 text-xs sm:text-sm text-[#6b5842] max-w-md mx-auto">
-            Wedding Ceremony &amp; Muhurtham · Bengaluru
+            Wedding &amp; Muhurtham · Bengaluru
           </p>
         </div>
 
@@ -54,19 +54,10 @@ export function CelebrationsTimeline() {
               <div className="flex-1 p-6 sm:p-7 md:p-8 flex flex-col justify-between">
                 <div>
                   {/* Event Header */}
-                  <div className="flex items-center justify-between border-b border-[#d4af37]/25 pb-3.5">
-                    <div>
-                      <span className="font-devanagari text-sm sm:text-base text-[#9a3412] font-semibold tracking-wider">
-                        {ev.hindi}
-                      </span>
-                      <h3 className="mt-1 font-cinzel text-2xl sm:text-3xl font-bold text-[#2c241d] tracking-wide">
-                        {ev.name}
-                      </h3>
-                    </div>
-
-                    <span className="h-9 w-9 rounded-full bg-[#f3ebd7] border border-[#b8860b]/40 text-[#996515] flex items-center justify-center font-cinzel text-xs sm:text-sm font-bold shadow-xs">
-                      0{index + 1}
-                    </span>
+                  <div className="border-b border-[#d4af37]/25 pb-3.5">
+                    <h3 className="font-cinzel text-2xl sm:text-3xl font-bold text-[#2c241d] tracking-wide">
+                      {ev.name}
+                    </h3>
                   </div>
 
                   {/* Timing & Venue details */}

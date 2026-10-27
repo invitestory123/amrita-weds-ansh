@@ -17,7 +17,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Together with their families, Amrutha and Ansh invite you to their wedding ceremony in Bengaluru on 22 Nov 2026.",
+          "Together with their families, Amrutha and Ansh invite you to their wedding in Bengaluru on 22 Nov 2026.",
       },
       {
         property: "og:title",
@@ -26,7 +26,7 @@ export const Route = createFileRoute("/")({
       {
         property: "og:description",
         content:
-          "Wedding Ceremony & Muhurtham in Bengaluru (22 Nov 2026).",
+          "Wedding & Muhurtham in Bengaluru (22 Nov 2026).",
       },
       { property: "og:image", content: "/og-image.png" },
       { property: "og:image:secure_url", content: "/og-image.png" },
@@ -46,7 +46,7 @@ export const Route = createFileRoute("/")({
       {
         name: "twitter:description",
         content:
-          "Wedding Ceremony & Muhurtham in Bengaluru (22 Nov 2026).",
+          "Wedding & Muhurtham in Bengaluru (22 Nov 2026).",
       },
       { name: "twitter:image", content: "/og-image.png" },
     ],
